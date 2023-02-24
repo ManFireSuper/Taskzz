@@ -1,10 +1,9 @@
 /**
  * This is a Task Management Project build by :
  * Ekpreet Singh
- * Amritanshu Shekhar
- * Krishna Pratap Singh
- * Aakash Ranjan
- * Sandeep Singh
+ * M Shreyaskumar Sharma
+ * D Sai Reshikesh
+ * Akshay Nagar
  */
 
 import 'package:first_app/screens/screen_01.dart';

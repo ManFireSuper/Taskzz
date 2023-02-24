@@ -1,4 +1,3 @@
-// Ekpreet, Aakash and Sandeep
 import 'package:flutter/material.dart';
 
 class Screen_2 extends StatefulWidget {

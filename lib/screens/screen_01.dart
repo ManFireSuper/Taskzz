@@ -1,5 +1,3 @@
-// Amritanshi and Krishna
-
 import 'package:first_app/screens/screen_02.dart';
 import 'package:flutter/material.dart';
 
