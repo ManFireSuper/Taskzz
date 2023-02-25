@@ -1,7 +1,9 @@
+import 'package:flutter/material.dart';
+
 class UserData {
   List<AddNewData> mainDataList = [];
 
-  void add_new_data(String tempNotes) {
+  add_new_data(String tempNotes) {
     mainDataList.add(AddNewData(tempNotes));
   }
 
@@ -12,5 +14,14 @@ class UserData {
 
 class AddNewData {
   String notes = "NaN";
+  bool? done = false;
   AddNewData(this.notes);
+
+  String getNewString() {
+    return notes;
+  }
+
+  bool? getNewDone() {
+    return done;
+  }
 }

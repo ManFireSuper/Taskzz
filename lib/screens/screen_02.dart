@@ -1,3 +1,6 @@
+import 'package:first_app/screens/active.dart';
+import 'package:first_app/screens/completed.dart';
+import 'package:first_app/screens/rocket.dart';
 import 'package:flutter/material.dart';
 
 class Screen_2 extends StatefulWidget {
@@ -17,17 +20,7 @@ class ChildScreen_2 extends State<Screen_2> {
             showModalBottomSheet(
               context: context,
               builder: (BuildContext context) {
-                return SizedBox(
-                  height: 300,
-                  child: Center(
-                    child: ElevatedButton(
-                      onPressed: () => Navigator.pop(context),
-                      child: Icon(
-                        Icons.close,
-                      ),
-                    ),
-                  ),
-                );
+                return rocket_parent();
               },
             );
           },
@@ -75,6 +68,31 @@ class ChildScreen_2 extends State<Screen_2> {
                   ),
                 ),
               ],
+            ),
+            Container(
+              margin: EdgeInsets.fromLTRB(10, 0, 0, 0),
+              child: Text(
+                "ON GOING :",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+            ),
+            Container(
+              height: MediaQuery.of(context).size.height * 0.45,
+              width: MediaQuery.of(context).size.width,
+              child: OngoingTasks_parent(),
+            ),
+            SizedBox.square(
+              dimension: 10,
+            ),
+            Container(
+              margin: EdgeInsets.fromLTRB(10, 0, 0, 0),
+              child: Text("COMPLETED :",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
+            ),
+            Container(
+              height: MediaQuery.of(context).size.height * 0.3,
+              width: MediaQuery.of(context).size.width,
+              child: Completed_parent(),
             ),
           ],
         ),
